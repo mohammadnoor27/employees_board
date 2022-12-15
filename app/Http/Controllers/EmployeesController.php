@@ -16,7 +16,7 @@ class EmployeesController extends Controller
     public function hr_dashboard(Request $request)
     {
         if ($request->ajax()) {
-            $data = User::latest()->get();
+            $data = User::where('role', 'employee')->get();
             return Datatables::of($data)
                 ->addIndexColumn()
                 ->rawColumns(['action'])
