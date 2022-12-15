@@ -17,6 +17,13 @@
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap-modal/css/bootstrap-modal.css') }}">
+    <style>
+        .toast-center-center{
+            bottom:50%;
+            margin:0 auto 0 -250px;
+            left:50%;
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light">
