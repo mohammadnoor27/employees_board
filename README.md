@@ -12,7 +12,9 @@ Employees have a dashboard to edit their details.
 
 To clone this project, you have to take some steps:
 - Create a schema named **employees_board**.
-- Then run this command ``php artisans migrate - seeds``.
+- Then run this command:
+``php artisan migrate``
+``php artisan migrate --seed``
 
 Now you have an HR account with email HR@example.com and password **"password"**.
 
