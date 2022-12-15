@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <title>Employees Board</title>
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('plugins/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/css/plugins.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/css/components.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/css/bootstrap.min.css') }}">
+    @stack('styles');
+    <link rel="stylesheet" href="{{ asset('plugins/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/datatables/plugins/bootstrap/datatables.bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap-modal/css/bootstrap-modal.css') }}">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            Employees Management System
+        </a>
+        @if (Auth::check())
+        <ul class="nav navbar-right">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="{{ URL::to('signout') }}" class="nav-link btn-nav">
+                        Log Out
+                    </a>
+                </li>
+            </ul>
+            <!-- end: USER OPTIONS DROPDOWN -->
+        </ul>
+        @endif
+    </div>
+</nav>
+<main style="padding-top: 100px">
+    @yield('content')
+</main>
+<script src="{{ asset('plugins/js/popper.min.js') }}"></script>
+<script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('plugins/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('plugins/datatables/media/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('plugins/datatables/plugins/bootstrap/datatables.bootstrap.js') }}"></script>
+<script src="{{ asset('plugins/bootstrap-modal/js/bootstrap-modal.js') }}"></script>
+<script src="{{ asset('plugins/bootstrap-modal/js/bootstrap-modalmanager.js') }}"></script>
+<script src="{{ asset('plugins/js/jquery.blockui.min.js') }}"></script>
+<script src="{{ asset('plugins/jquery-validation/jquery.validate.js') }}"></script>
+<script src="{{ asset('plugins/js/jquery.form.js') }}"></script>
+<script src="{{ asset('plugins/uniform/js/jquery.uniform.js') }}"></script>
+<script src="{{ asset('plugins/js/bootbox.all.min.js') }}"></script>
+<script src="{{ asset('plugins/toastr/toastr.js') }}"></script>
+<script src="{{ asset('plugins/js/app.js') }}"></script>
+<script src="{{ asset('plugins/js/main.js') }}"></script>
+
+</body>
+</html>
