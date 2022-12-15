@@ -129,6 +129,10 @@ $(document).ready(function () {
                 required: true,
                 minlength: 2
             },
+            job_title: {
+                required: true,
+                minlength: 2
+            },
             email: {
                 required: true,
                 email: true
@@ -220,6 +224,10 @@ $(document).ready(function () {
         ignore: "", // validate all fields including form hidden input
         rules: {
             name: {
+                required: true,
+                minlength: 2
+            },
+            job_title: {
                 required: true,
                 minlength: 2
             },
