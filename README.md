@@ -1,6 +1,23 @@
-<<<<<<< HEAD
-# employees_board
-=======
+# Employees Board
+This is a small project on employee management system containing:
+- Login page with authentication system.
+- There are two roles "Human Resources" and "Employee".
+
+Human Resources has a dashboard to manage all employees such as:
+- Add an employee
+- Employee modification
+- Delete the employee
+
+Employees have a dashboard to edit their details.
+
+To clone this project, you have to take some steps:
+- Create a schema named **employees_board**.
+- Then run this command ``php artisans migrate - seeds``.
+
+Now you have an HR account with email HR@example.com and password **"password"**.
+
+### I have been build this project using Laravel Framework.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
