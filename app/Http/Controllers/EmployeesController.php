@@ -7,7 +7,6 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Yajra\DataTables\DataTables;
 
@@ -28,7 +27,6 @@ class EmployeesController extends Controller
     public function employee_dashboard()
     {
         $data = Auth::user();
-//        die(var_dump($data));
         return view('users.employees.dashboard')->with('data', $data);
     }
 
