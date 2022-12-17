@@ -18,10 +18,10 @@ class HrAuthenticated
     public function handle(Request $request, Closure $next)
     {
         if (Auth::check()) {
-            // if user is not admin take him to his dashboard
+            // if user is not hr take him to his dashboard
             if (Auth::user()->isEmployee()) {
                 return redirect(route('employee.dashboard'));
-            } // allow admin to proceed with request
+            } // allow hr to proceed with request
             else if (Auth::user()->isHr()) {
                 return $next($request);
             }

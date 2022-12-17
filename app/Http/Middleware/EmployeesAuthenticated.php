@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class EmployeesAuthenticated
 {
@@ -16,6 +17,16 @@ class EmployeesAuthenticated
      */
     public function handle(Request $request, Closure $next)
     {
-        return $next($request);
+        if (Auth::check()) {
+            // if user is not employee take him to his dashboard
+            if (Auth::user()->isHR()) {
+                return redirect(route('hr.dashboard'));
+            } // allow employee to proceed with request
+            else if (Auth::user()->isEmployee()) {
+                return $next($request);
+            }
+        }
+
+        abort(404);  // for other user throw 404 error
     }
 }
