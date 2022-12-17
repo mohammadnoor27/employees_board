@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ asset('plugins/css/plugins.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/css/components.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/css/bootstrap.min.css') }}">
-    @stack('styles');
+    @stack('styles')
     <link rel="stylesheet" href="{{ asset('plugins/css/themify-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/datatables/plugins/bootstrap/datatables.bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css') }}">

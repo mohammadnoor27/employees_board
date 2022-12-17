@@ -19,7 +19,7 @@
         </section>
         <!-- end: PAGE TITLE -->
         <!-- start: BASIC EXAMPLE -->
-        <div class="container-fluid container-fullw bg-white">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="portlet box grey-cascade" id="user_portlet">
