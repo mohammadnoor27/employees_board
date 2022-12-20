@@ -80,7 +80,7 @@
         <div class="row">
             <div class="col-md-12 form">
                 <form
-                    action="{{ route('new.employee') }}"
+                    action="{{ route('admin.new.employee') }}"
                     id="user_form" method="post" class="form-horizontal">
                     @csrf
                     <input type="hidden" name="id"/>

@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <form
-                        action="{{ route('new.employee') }}"
+                        action="{{ route('user.new.employee') }}"
                         id="user_edit_form" method="post" class="form-horizontal">
                         @csrf
                         @if ($message = Session::get('edit_user_status'))
